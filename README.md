@@ -8,7 +8,7 @@ https://intelekt.net.pl/pages/demo-1/icore
 
 ## Pricing
 
-https://intelekt.net.pl/pages/cennik-1/idcore
+https://intelekt.net.pl/pages/cennik-1/icore
 
 ## Purchase
 
