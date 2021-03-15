@@ -4,11 +4,11 @@ Mini blog application based on modern Laravel framework. Good platform to expand
 
 ## Demo
 
-https://intelekt.net.pl/pages/demo-2/icore
+https://intelekt.net.pl/pages/demo-1/icore
 
 ## Pricing
 
-https://intelekt.net.pl/pages/cennik-2/idcore
+https://intelekt.net.pl/pages/cennik-1/idcore
 
 ## Purchase
 
@@ -16,7 +16,7 @@ https://intelekt.net.pl/orders/product/icore/create/2
 
 ## Documentation
 
-https://intelekt.net.pl/pages/dokumentacja-2/icore
+https://intelekt.net.pl/pages/dokumentacja-1/icore
 
 ## Copyright and License
 
