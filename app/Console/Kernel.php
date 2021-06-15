@@ -27,7 +27,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
 
-        $schedule->command('queue:work --daemon --stop-when-empty --tries=3 --max-jobs=1000')
+        $schedule->command('queue:work --daemon --stop-when-empty --tries=3')
             ->withoutOverlapping();
     }
 
