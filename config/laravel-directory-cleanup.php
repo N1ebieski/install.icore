@@ -9,7 +9,7 @@ return [
          * the specified amount of minutes will be deleted.
          */
 
-        'storage/app/public/vendor/idir/temp' => [
+        'storage/app/public/vendor/icore/temp' => [
             'deleteAllOlderThanMinutes' => 60,
         ],
     ],

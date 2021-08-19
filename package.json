@@ -12,6 +12,7 @@
     "devDependencies": {
         "@forevolve/bootstrap-dark": "1.0.0-alpha.902",
         "@fortawesome/fontawesome-free": "^5.14.0",
+        "ajax-bootstrap-select": "^1.4.5",
         "bootstrap": "^4.5.0",
         "bootstrap-confirmation2": "^4.1.0",
         "bootstrap-select": "^1.13.18",

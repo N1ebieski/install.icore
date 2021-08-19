@@ -1,12 +1,12 @@
 User-agent: *
 Allow: /*?page=*
 Disallow: /*?filter*
+Disallow: /*?search*
 Disallow: /admin*
 Disallow: /login*
 Disallow: /logout
 Disallow: /register
 Disallow: /password*
-Disallow: /*search*
 Disallow: /thumbnails*
 
 Sitemap: storage/vendor/icore/sitemap/sitemap.xml
