@@ -3,6 +3,7 @@ Allow: /*?page=*
 Disallow: /*?filter*
 Disallow: /*?search*
 Disallow: /admin*
+Disallow: /api*
 Disallow: /login*
 Disallow: /logout
 Disallow: /register
