@@ -5,6 +5,14 @@
 
     RewriteEngine On
 
+    # # Redirect www to no-www
+    # RewriteCond %{HTTP_HOST} ^www\.(.+) [NC]
+    # RewriteRule ^(.*) https://%1/$1 [R=301,NE,L]
+
+    # # Redirect no-www to www
+    # RewriteCond %{HTTP_HOST} ^(?!www\.)(.+) [NC]
+    # RewriteRule ^(.*) https://www.%1/$1 [R=301,NE,L]  
+
     # Redirect index.php to root
     RewriteCond %{THE_REQUEST} ^.*/index\.php
     RewriteRule ^index.php$ / [R=301,L]
