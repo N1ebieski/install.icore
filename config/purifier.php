@@ -24,7 +24,7 @@ return [
     'settings'      => [
         'default' => [
             'HTML.Doctype'             => 'HTML 4.01 Transitional',
-            'HTML.Allowed'             => 'div,b,strong,i,em,u,a[href|title|target|rel],ul[style],ol[style],li,p[style],br,span[style],img[width|height|alt|src],sub,sup,hr,h1,h2,h3,h4,h5,blockquote,del',
+            'HTML.Allowed'             => 'div[style|class],b,strong,i,em,u,a[href|title|target|rel],ul[style],ol[style],li,p[style],br,span[style],img[width|height|alt|src],sub,sup,hr,h1,h2,h3,h4,h5,blockquote,del,table[style|class],thead[style|class],tbody[style|class],th[style|class|scope],tr[style|class],td[style|class|colspan]',
             'Attr.AllowedRel'          => 'nofollow',
             'HTML.TargetNoreferrer'    => false,            
             'CSS.AllowedProperties'    => 'font,font-size,font-weight,font-style,font-family,text-decoration,padding-left,color,background-color,text-align',
