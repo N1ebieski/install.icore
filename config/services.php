@@ -45,6 +45,11 @@ return [
         'site_key'   => env('RECAPTCHA_V2_SITE_KEY'),
     ],
 
+    'recaptcha_invisible' => [
+        'secret_key' => env('RECAPTCHA_INVISIBLE_SECRET_KEY'),
+        'site_key'   => env('RECAPTCHA_INVISIBLE_SITE_KEY'),
+    ],
+
     'googlemap' => [
         'api_key' => env('GOOGLEMAP_API_KEY')
     ]
