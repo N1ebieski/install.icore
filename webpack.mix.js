@@ -1,5 +1,6 @@
 const mix = require('laravel-mix');
 let { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require('path');
 
 /*
  |--------------------------------------------------------------------------
@@ -7,7 +8,7 @@ let { CleanWebpackPlugin } = require('clean-webpack-plugin');
  |--------------------------------------------------------------------------
  |
  | Mix provides a clean, fluent API for defining some Webpack build steps
- | for your Laravel application. By default, we are compiling the Sass
+ | for your Laravel applications. By default, we are compiling the CSS
  | file for the application as well as bundling up all the JS files.
  |
  */
@@ -25,6 +26,7 @@ mix.webpackConfig({
     ],
     resolve: {
         alias: {
+            'jquery': path.join(__dirname, 'node_modules/jquery/src/jquery'),             
             '~': path.resolve(__dirname, 'node_modules/')
         }
     }

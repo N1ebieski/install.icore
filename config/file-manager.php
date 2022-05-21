@@ -1,7 +1,7 @@
 <?php
 
-use Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository;
 use N1ebieski\ICore\FileManager\Security\UsersACLRepository;
+use Alexusmai\LaravelFileManager\Services\ConfigService\DefaultConfigRepository;
 
 return [
 
@@ -31,7 +31,7 @@ return [
      * List of disk names that you want to use
      * (from config/filesystems)
      */
-    'diskList' => ['public'],
+    'diskList' => ['public', 'css', 'views', 'lang'],
 
     /**
      * Default disk for left manager
@@ -76,7 +76,7 @@ return [
      * 2 - one file manager window with directories tree module
      * 3 - two file manager windows
      */
-    'windowsConfig' => 2,
+    'windowsConfig' => 1,
 
     /**
      * File upload - Max file size in KB

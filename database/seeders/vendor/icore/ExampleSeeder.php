@@ -1,6 +1,6 @@
 <?php
 
-namespace N1ebieski\ICore\Seeds;
+namespace N1ebieski\ICore\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 

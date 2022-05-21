@@ -7,18 +7,22 @@
         "icore installer"
     ],
     "require": {
-        "php": "^7.2",
-        "fideloper/proxy": "^4.0",
-        "laravel/framework": "^6.20.12",
-        "laravel/tinker": "^2.0",
-        "n1ebieski/icore": "^6.0"
+        "php": "^7.3|^8.0",
+        "fideloper/proxy": "^4.4",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "laravel/framework": "^8.75",
+        "laravel/tinker": "^2.5",
+        "laravel/sanctum": "^2.11",
+        "predis/predis": "^1.1",
+        "n1ebieski/icore": "dev-master"
     },
     "require-dev": {
-        "facade/ignition": "^1.4",
+        "facade/ignition": "^2.5",
         "fzaninotto/faker": "^1.9.1",
-        "mockery/mockery": "^1.0",
-        "nunomaduro/collision": "^3.0",
-        "phpunit/phpunit": "^8.0"
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10"
     },
     "config": {
         "optimize-autoloader": true,
@@ -33,12 +37,12 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "N1ebieski\\ICore\\Seeds\\": "database/seeds/vendor/icore/"
-        },
-        "classmap": [
-            "database/seeds",
-            "database/factories"
-        ]
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/", 
+            "N1ebieski\\ICore\\": "packages/n1ebieski/icore/src/",
+            "N1ebieski\\ICore\\Database\\Factories\\": "database/factories/vendor/icore/",            
+            "N1ebieski\\ICore\\Database\\Seeders\\": "database/seeders/vendor/icore/"
+        }
     },
     "autoload-dev": {
         "psr-4": {
@@ -65,6 +69,9 @@
         "post-autoload-dump": [
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
             "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""

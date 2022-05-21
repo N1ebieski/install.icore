@@ -5,7 +5,7 @@ return [
     /*
      * Default view used to render Javascript validation code
      *
-     * Supported: 'jsvalidation::bootstrap', 'jsvalidation::bootstrap4'
+     * Supported: 'jsvalidation::bootstrap', 'jsvalidation::bootstrap4', 'jsvalidation::uikit'
      */
     'view' => 'jsvalidation::bootstrap4',
 
@@ -29,7 +29,7 @@ return [
 
     /*
      * Enable or disable Ajax validations of Database and custom rules.
-     * By default Unique, active_url, Exists and custom validations are validated via AJAX
+     * By default Unique, ActiveURL, Exists and custom validations are validated via AJAX
      */
     'disable_remote_validation' => false,
 
@@ -42,5 +42,12 @@ return [
     /*
      * Whether to escape all validation messages with htmlentities.
      */
-    'escape' => false
+    'escape' => false,
+
+    /*
+     * Set a default value for the validate ignore property.
+     *
+     * See https://jqueryvalidation.org/validate/#ignore
+     */
+    'ignore' => ":hidden, [contenteditable='true']",
 ];
