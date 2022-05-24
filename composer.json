@@ -15,7 +15,7 @@
         "laravel/tinker": "^2.5",
         "laravel/sanctum": "^2.11",
         "predis/predis": "^1.1",
-        "n1ebieski/icore": "dev-master"
+        "n1ebieski/icore": "^7.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -39,7 +39,6 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/", 
-            "N1ebieski\\ICore\\": "packages/n1ebieski/icore/src/",
             "N1ebieski\\ICore\\Database\\Factories\\": "database/factories/vendor/icore/",            
             "N1ebieski\\ICore\\Database\\Seeders\\": "database/seeders/vendor/icore/"
         }
