@@ -17,6 +17,8 @@ return [
 
     'default' => env('CACHE_DRIVER', 'tfile'),
 
+    'limiter' => 'system',
+
     /*
     |--------------------------------------------------------------------------
     | Cache Stores
@@ -52,11 +54,6 @@ return [
         'file' => [
             'driver' => 'file',
             'path' => storage_path('framework/cache/data'),
-        ],
-
-        'system' => [
-            'driver' => 'file',
-            'path' => storage_path('framework/cache/system')
         ],
 
         'tfile' => [
@@ -100,6 +97,13 @@ return [
 
         'octane' => [
             'driver' => 'octane',
+        ],
+
+        // Custom stores
+
+        'system' => [
+            'driver' => 'file',
+            'path' => storage_path('framework/cache/system')
         ],
 
     ],
